@@ -29,6 +29,20 @@ Route::filter('csrf', function()
 Route::resource('user', 'UserController');
 Route::resource('city', 'CityController');
 
+//Test Layouts
+Route::get('about', function()
+{
+	return View::make('pages.about');
+});
+Route::get('projects', function()
+{
+	return View::make('pages.projects');
+});
+Route::get('contact', function()
+{
+	return View::make('pages.contact');
+});
+
 
 
 
